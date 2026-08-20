@@ -36,8 +36,8 @@ const Header = ({ transparent = false }: HeaderProps) => {
           ))}
         </nav>
 
-        <Link to="/" className={`font-serif text-xl md:text-2xl tracking-wider ${transparent ? "text-white" : "text-foreground"}`}>
-          S&A 10.14.25
+        <Link to="/" className={`font-inter text-sm md:text-xl font-bold tracking-tight ${transparent ? "text-white" : "text-foreground"}`}>
+          introducing Kali — detect dark patterns
         </Link>
 
         <div className="hidden md:block">
