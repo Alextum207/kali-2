@@ -36,14 +36,14 @@ const Index = () => {
           <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-24">
             {/* Vision */}
             <ScrollReveal direction="left">
-              <div className="flex flex-col md:flex-row items-center gap-10">
+              <div className="flex flex-col md:flex-row items-start gap-10">
                 <div className="w-full md:w-[65%] overflow-hidden">
                   <video autoPlay muted loop playsInline className="w-full aspect-[3/4] object-cover hover:scale-105 transition-transform duration-700">
                     <source src={crawlerVideo.url} type="video/mp4" />
                   </video>
                 </div>
-                <div className="text-center w-full md:w-[35%]">
-                  <h2 className="font-serif text-6xl md:text-7xl font-light mb-5 text-primary">Vision</h2>
+                <div className="text-center w-full md:w-[35%] pt-2">
+                  <h2 className="font-serif text-4xl md:text-5xl font-light mb-5 text-primary">Vision</h2>
                   <p className="font-sans text-sm md:text-base text-muted-foreground leading-relaxed">
                     Kali macht manipulative Dark-Pattern-Designs auf Webseiten sichtbar und rechtlich einordenbar, damit Verbraucherzentralen und Aufsichtsbehörden systematisch und gerichtsfest gegen sie vorgehen können.
                   </p>
@@ -53,14 +53,14 @@ const Index = () => {
 
             {/* Vorgehen */}
             <ScrollReveal direction="right" delay={0.15}>
-              <div className="flex flex-col md:flex-row items-center gap-10">
+              <div className="flex flex-col md:flex-row items-start gap-10">
                 <div className="w-full md:w-[65%] overflow-hidden md:order-last">
                   <video autoPlay muted loop playsInline className="w-full aspect-[3/4] object-cover hover:scale-105 transition-transform duration-700">
                     <source src={visionVideo.url} type="video/mp4" />
                   </video>
                 </div>
-                <div className="text-center w-full md:w-[35%]">
-                  <h2 className="font-serif text-6xl md:text-7xl font-light mb-5 text-primary">Vorgehen</h2>
+                <div className="text-center w-full md:w-[35%] pt-2">
+                  <h2 className="font-serif text-4xl md:text-5xl font-light mb-5 text-primary">Vorgehen</h2>
                   <p className="font-sans text-sm md:text-base text-muted-foreground leading-relaxed">
                     Ein automatisierter Crawler durchsucht Zielseiten headless, erkennt Dark Patterns über eine Kombination aus visuellen Heuristiken und KI-Textklassifikation, ordnet jeden Fund der einschlägigen Rechtsnorm und bietet einen Report.
                   </p>
