@@ -6,7 +6,7 @@ import ScrollReveal from "@/components/ScrollReveal";
 import heroVideo from "@/assets/hero-video.mp4";
 import visionVideo from "@/assets/vision-scan.mp4.asset.json";
 import crawlerVideo from "@/assets/vorgehensweise-crawler.mp4.asset.json";
-import ctaImage from "@/assets/couple-ring.jpg";
+import logoAsset from "@/assets/logo.jpg.asset.json";
 
 const Index = () => {
   return (
@@ -85,19 +85,18 @@ const Index = () => {
           </section>
         </ScrollReveal>
 
-        {/* Full-width CTA Image */}
+        {/* Full-width Logo */}
         <ScrollReveal direction="none" duration={0.8}>
-          <section className="relative h-[60vh] md:h-[70vh] overflow-hidden">
+          <section className="relative h-[60vh] md:h-[70vh] overflow-hidden bg-white flex items-center justify-center">
             <motion.img
-              src={ctaImage}
-              alt="Couple in outdoor setting with mountain landscape"
-              className="absolute inset-0 w-full h-full object-cover"
+              src={logoAsset.url}
+              alt="Kali — Dark Pattern Detector"
+              className="w-full h-full object-contain p-8 md:p-16"
               whileInView={{ scale: 1 }}
               initial={{ scale: 1.05 }}
               viewport={{ once: true }}
               transition={{ duration: 1.2, ease: "easeOut" }}
             />
-            <div className="absolute inset-0 bg-black/20" />
           </section>
         </ScrollReveal>
 
