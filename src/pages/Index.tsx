@@ -4,7 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import PageTransition from "@/components/PageTransition";
 import ScrollReveal from "@/components/ScrollReveal";
-import heroImage from "@/assets/hero-cover.jpg";
+import heroVideo from "@/assets/video_für_website.mp4.asset.json";
 import ceremonyImage from "@/assets/couple-hand-kiss.jpg";
 import receptionImage from "@/assets/couple-kiss.jpg";
 import ctaImage from "@/assets/couple-ring.jpg";
