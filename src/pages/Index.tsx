@@ -4,7 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import PageTransition from "@/components/PageTransition";
 import ScrollReveal from "@/components/ScrollReveal";
-import heroVideo from "@/assets/video_für_website.mp4.asset.json";
+import heroVideo from "@/assets/hero-video.mp4";
 import visionVideo from "@/assets/vision-scan.mp4.asset.json";
 import crawlerVideo from "@/assets/vorgehensweise-crawler.mp4.asset.json";
 import ctaImage from "@/assets/couple-ring.jpg";
@@ -27,7 +27,7 @@ const Index = () => {
             animate={{ scale: 1 }}
             transition={{ duration: 1.4, ease: "easeOut" }}
           >
-            <source src={heroVideo.url} type="video/mp4" />
+            <source src={heroVideo} type="video/mp4" />
           </motion.video>
           <div className="absolute inset-0 bg-black/30" />
         </section>

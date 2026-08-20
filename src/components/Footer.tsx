@@ -18,9 +18,17 @@ const Footer = () => (
         <p className="text-xs uppercase tracking-wider font-sans text-muted-foreground mb-2">Quick Links</p>
         <div className="space-y-1.5">
           <Link to="/" className="block text-xs text-muted-foreground hover:text-foreground transition-colors">Home</Link>
-          <Link to="/story" className="block text-xs text-muted-foreground hover:text-foreground transition-colors">Our Story</Link>
-          <Link to="/travel" className="block text-xs text-muted-foreground hover:text-foreground transition-colors">Travel & Stay</Link>
-          <Link to="/registry" className="block text-xs text-muted-foreground hover:text-foreground transition-colors">Registry</Link>
+          <Link to="/team" className="block text-xs text-muted-foreground hover:text-foreground transition-colors">Team</Link>
+          <Link to="/pitch-deck" className="block text-xs text-muted-foreground hover:text-foreground transition-colors">Pitch Deck</Link>
+          <Link to="/guide" className="block text-xs text-muted-foreground hover:text-foreground transition-colors">Guide</Link>
+          <a
+            href="https://github.com/Alextum207/Kali/blob/master/README.md"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block text-xs text-muted-foreground hover:text-foreground transition-colors"
+          >
+            README
+          </a>
         </div>
       </div>
       <div>
