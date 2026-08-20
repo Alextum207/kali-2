@@ -40,7 +40,7 @@ const Index = () => {
               <div className="flex flex-col md:flex-row items-center gap-10">
                 <div className="w-full md:w-1/2 overflow-hidden">
                   <video autoPlay muted loop playsInline className="w-full aspect-[3/4] object-cover hover:scale-105 transition-transform duration-700">
-                    <source src={visionVideo.url} type="video/mp4" />
+                    <source src={crawlerVideo.url} type="video/mp4" />
                   </video>
                 </div>
                 <div className="text-center flex-1">
@@ -57,7 +57,7 @@ const Index = () => {
               <div className="flex flex-col md:flex-row items-center gap-10">
                 <div className="w-full md:w-1/2 overflow-hidden md:order-last">
                   <video autoPlay muted loop playsInline className="w-full aspect-[3/4] object-cover hover:scale-105 transition-transform duration-700">
-                    <source src={crawlerVideo.url} type="video/mp4" />
+                    <source src={visionVideo.url} type="video/mp4" />
                   </video>
                 </div>
                 <div className="text-center flex-1">
@@ -74,13 +74,15 @@ const Index = () => {
         {/* CTA - Our Story */}
         <ScrollReveal>
           <section className="py-20 md:py-28 text-center px-6">
-            <h2 className="font-serif text-4xl md:text-5xl font-light mb-8">See how it all started</h2>
-            <Link
-              to="/story"
+            <h2 className="font-serif text-4xl md:text-5xl font-light mb-8">Genaue Beschreibung</h2>
+            <a
+              href="https://github.com/Alextum207/Kali/blob/master/README.md"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-block bg-foreground text-background px-10 py-3 text-sm font-sans tracking-widest uppercase hover:bg-foreground/80 hover:scale-105 transition-all duration-300"
             >
-              Our Story
-            </Link>
+              Read Me
+            </a>
           </section>
         </ScrollReveal>
 
