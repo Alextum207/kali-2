@@ -12,9 +12,9 @@ const Header = ({ transparent = false }: HeaderProps) => {
   const location = useLocation();
 
   const links = [
-    { to: "/story", label: "Our Story" },
-    { to: "/travel", label: "Travel & Stay" },
-    { to: "/registry", label: "Registry" },
+    { to: "/team", label: "Team" },
+    { to: "/pitch-deck", label: "Pitch Deck" },
+    { to: "/guide", label: "Guide" },
   ];
 
   return (
@@ -45,7 +45,7 @@ const Header = ({ transparent = false }: HeaderProps) => {
             href="https://github.com/Alextum207/Kali"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-6 py-2 text-sm tracking-widest uppercase font-sans bg-primary text-primary-foreground hover:bg-primary/90 hover:scale-105 transition-all duration-200"
+            className="px-6 py-2 text-sm tracking-widest uppercase font-sans bg-foreground text-background hover:bg-foreground/80 hover:scale-105 transition-all duration-200"
           >
             GitHub
           </a>

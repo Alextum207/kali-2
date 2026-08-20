@@ -10,6 +10,9 @@ import Travel from "./pages/Travel";
 import Registry from "./pages/Registry";
 import Cart from "./pages/Cart";
 import RSVP from "./pages/RSVP";
+import Team from "./pages/Team";
+import PitchDeck from "./pages/PitchDeck";
+import Guide from "./pages/Guide";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -25,6 +28,9 @@ const AnimatedRoutes = () => {
         <Route path="/registry" element={<Registry />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/rsvp" element={<RSVP />} />
+        <Route path="/team" element={<Team />} />
+        <Route path="/pitch-deck" element={<PitchDeck />} />
+        <Route path="/guide" element={<Guide />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </AnimatePresence>
