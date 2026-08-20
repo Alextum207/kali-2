@@ -4,7 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import PageTransition from "@/components/PageTransition";
 import ScrollReveal from "@/components/ScrollReveal";
-import heroImage from "@/assets/hero-cover.jpg";
+import heroVideo from "@/assets/video_für_website.mp4.asset.json";
 import ceremonyImage from "@/assets/couple-hand-kiss.jpg";
 import receptionImage from "@/assets/couple-kiss.jpg";
 import ctaImage from "@/assets/couple-ring.jpg";
@@ -17,40 +17,40 @@ const Index = () => {
 
         {/* Hero */}
         <section className="relative h-screen flex items-start justify-center pt-[18vh] overflow-hidden">
-          <motion.img
-            src={heroImage}
-            alt="Soria and Antoine embracing on mountain overlook during sunset"
+          <motion.video
+            autoPlay
+            muted
+            loop
+            playsInline
             className="absolute inset-0 w-full h-full object-cover"
             initial={{ scale: 1.1 }}
             animate={{ scale: 1 }}
             transition={{ duration: 1.4, ease: "easeOut" }}
-          />
+          >
+            <source src={heroVideo.url} type="video/mp4" />
+          </motion.video>
           <div className="absolute inset-0 bg-black/30" />
-          <div className="relative z-10 text-center text-white px-4">
-            <motion.p
-              className="font-sans text-sm md:text-base tracking-widest uppercase mb-4"
+          <div className="relative z-10 text-center px-4 flex flex-col items-center gap-4">
+            <motion.div
+              className="bg-white px-8 py-4 md:px-12 md:py-5"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.3 }}
             >
-              We're Getting Married!
-            </motion.p>
-            <motion.h1
-              className="font-serif text-6xl md:text-8xl lg:text-9xl font-light mb-6"
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.5 }}
-            >
-              Soria & Antoine
-            </motion.h1>
-            <motion.p
-              className="font-sans text-lg md:text-xl tracking-[0.3em]"
+              <h1 className="font-inter text-3xl md:text-5xl lg:text-6xl font-bold text-black tracking-tight">
+                introducing Kali
+              </h1>
+            </motion.div>
+            <motion.div
+              className="bg-white px-6 py-3 md:px-8 md:py-4"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7, delay: 0.7 }}
+              transition={{ duration: 0.7, delay: 0.5 }}
             >
-              10 . 14 . 25
-            </motion.p>
+              <p className="font-inter text-sm md:text-base lg:text-lg font-semibold text-black tracking-wide">
+                detect dark patterns, never get tricked again
+              </p>
+            </motion.div>
           </div>
         </section>
 
