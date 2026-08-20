@@ -31,19 +31,19 @@ const Index = () => {
           <div className="absolute inset-0 bg-black/30" />
         </section>
 
-        {/* Vision & Vorgehensweise */}
-        <section className="bg-secondary py-32 md:py-44 px-6 md:px-12">
-          <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-24">
+        {/* Vision & Vorgehen */}
+        <section className="bg-secondary py-16 md:py-32 px-6 md:px-12">
+          <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16">
             {/* Vision */}
             <ScrollReveal direction="left">
-              <div className="flex flex-col md:flex-row items-start gap-10">
-                <div className="w-full md:w-[65%] overflow-hidden">
-                  <video autoPlay muted loop playsInline className="w-full aspect-[3/4] object-cover hover:scale-105 transition-transform duration-700">
+              <div className="flex flex-col md:flex-row items-start gap-6 md:gap-8 h-full">
+                <div className="w-full md:w-1/2 overflow-hidden">
+                  <video autoPlay muted loop playsInline className="w-full aspect-[4/3] md:aspect-[3/4] object-cover hover:scale-105 transition-transform duration-700">
                     <source src={crawlerVideo.url} type="video/mp4" />
                   </video>
                 </div>
-                <div className="text-center w-full md:w-[35%] pt-2">
-                  <h2 className="font-serif text-4xl md:text-5xl font-light mb-5 text-primary">Vision</h2>
+                <div className="w-full md:w-1/2 pt-2 text-center md:text-left">
+                  <h2 className="font-serif text-3xl md:text-4xl font-light mb-4 text-primary">Vision</h2>
                   <p className="font-sans text-sm md:text-base text-muted-foreground leading-relaxed">
                     Kali macht manipulative Dark-Pattern-Designs auf Webseiten sichtbar und rechtlich einordenbar, damit Verbraucherzentralen und Aufsichtsbehörden systematisch und gerichtsfest gegen sie vorgehen können.
                   </p>
@@ -53,14 +53,14 @@ const Index = () => {
 
             {/* Vorgehen */}
             <ScrollReveal direction="right" delay={0.15}>
-              <div className="flex flex-col md:flex-row items-start gap-10">
-                <div className="w-full md:w-[65%] overflow-hidden md:order-last">
-                  <video autoPlay muted loop playsInline className="w-full aspect-[3/4] object-cover hover:scale-105 transition-transform duration-700">
+              <div className="flex flex-col md:flex-row-reverse items-start gap-6 md:gap-8 h-full">
+                <div className="w-full md:w-1/2 overflow-hidden">
+                  <video autoPlay muted loop playsInline className="w-full aspect-[4/3] md:aspect-[3/4] object-cover hover:scale-105 transition-transform duration-700">
                     <source src={visionVideo.url} type="video/mp4" />
                   </video>
                 </div>
-                <div className="text-center w-full md:w-[35%] pt-2">
-                  <h2 className="font-serif text-4xl md:text-5xl font-light mb-5 text-primary">Vorgehen</h2>
+                <div className="w-full md:w-1/2 pt-2 text-center md:text-left">
+                  <h2 className="font-serif text-3xl md:text-4xl font-light mb-4 text-primary">Vorgehen</h2>
                   <p className="font-sans text-sm md:text-base text-muted-foreground leading-relaxed">
                     Ein automatisierter Crawler durchsucht Zielseiten headless, erkennt Dark Patterns über eine Kombination aus visuellen Heuristiken und KI-Textklassifikation, ordnet jeden Fund der einschlägigen Rechtsnorm und bietet einen Report.
                   </p>
