@@ -30,28 +30,6 @@ const Index = () => {
             <source src={heroVideo.url} type="video/mp4" />
           </motion.video>
           <div className="absolute inset-0 bg-black/30" />
-          <div className="relative z-10 text-center px-4 flex flex-col items-center gap-4">
-            <motion.div
-              className="bg-white px-8 py-4 md:px-12 md:py-5"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7, delay: 0.3 }}
-            >
-              <h1 className="font-inter text-3xl md:text-5xl lg:text-6xl font-bold text-black tracking-tight">
-                introducing Kali
-              </h1>
-            </motion.div>
-            <motion.div
-              className="bg-white px-6 py-3 md:px-8 md:py-4"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7, delay: 0.5 }}
-            >
-              <p className="font-inter text-sm md:text-base lg:text-lg font-semibold text-black tracking-wide">
-                detect dark patterns, never get tricked again
-              </p>
-            </motion.div>
-          </div>
         </section>
 
         {/* Event Details */}
