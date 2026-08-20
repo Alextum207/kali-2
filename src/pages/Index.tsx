@@ -6,7 +6,7 @@ import ScrollReveal from "@/components/ScrollReveal";
 import heroVideo from "@/assets/hero-video.mp4";
 import visionVideo from "@/assets/vision-scan.mp4.asset.json";
 import crawlerVideo from "@/assets/vorgehensweise-crawler.mp4.asset.json";
-import ctaImage from "@/assets/couple-ring.jpg";
+import logoAsset from "@/assets/logo.jpg.asset.json";
 
 const Index = () => {
   return (
