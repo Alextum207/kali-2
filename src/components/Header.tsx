@@ -41,14 +41,14 @@ const Header = ({ transparent = false }: HeaderProps) => {
         </Link>
 
         <div className="hidden md:block">
-          <Link
-            to="/rsvp"
-            className={`px-6 py-2 text-sm tracking-widest uppercase font-sans hover:scale-105 transition-all duration-200 ${
-              transparent ? "bg-white text-foreground hover:bg-white/90" : "bg-foreground text-card hover:bg-foreground/80"
-            }`}
+          <a
+            href="https://github.com/Alextum207/Kali"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-6 py-2 text-sm tracking-widest uppercase font-sans bg-primary text-primary-foreground hover:bg-primary/90 hover:scale-105 transition-all duration-200"
           >
-            RSVP
-          </Link>
+            GitHub
+          </a>
         </div>
 
         <button
@@ -90,13 +90,15 @@ const Header = ({ transparent = false }: HeaderProps) => {
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: links.length * 0.08, duration: 0.3 }}
             >
-              <Link
-                to="/rsvp"
+              <a
+                href="https://github.com/Alextum207/Kali"
+                target="_blank"
+                rel="noopener noreferrer"
                 onClick={() => setMobileOpen(false)}
-                className="block bg-foreground text-card px-6 py-2 text-sm tracking-widest uppercase font-sans text-center"
+                className="block bg-primary text-primary-foreground px-6 py-2 text-sm tracking-widest uppercase font-sans text-center"
               >
-                RSVP
-              </Link>
+                GitHub
+              </a>
             </motion.div>
           </motion.div>
         )}

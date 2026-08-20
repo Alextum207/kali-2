@@ -5,8 +5,8 @@ import Footer from "@/components/Footer";
 import PageTransition from "@/components/PageTransition";
 import ScrollReveal from "@/components/ScrollReveal";
 import heroVideo from "@/assets/video_für_website.mp4.asset.json";
-import ceremonyImage from "@/assets/couple-hand-kiss.jpg";
-import receptionImage from "@/assets/couple-kiss.jpg";
+import visionVideo from "@/assets/vision-scan.mp4.asset.json";
+import crawlerVideo from "@/assets/vorgehensweise-crawler.mp4.asset.json";
 import ctaImage from "@/assets/couple-ring.jpg";
 
 const Index = () => {
@@ -32,57 +32,39 @@ const Index = () => {
           <div className="absolute inset-0 bg-black/30" />
         </section>
 
-        {/* Event Details */}
-        <section className="bg-[#f0efed] py-32 md:py-44 px-6 md:px-12">
+        {/* Vision & Vorgehensweise */}
+        <section className="bg-secondary py-32 md:py-44 px-6 md:px-12">
           <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-24">
-            {/* Ceremony */}
+            {/* Vision */}
             <ScrollReveal direction="left">
               <div className="flex flex-col md:flex-row items-center gap-10">
                 <div className="w-full md:w-1/2 overflow-hidden">
-                  <img src={ceremonyImage} alt="Couple in formal attire in natural outdoor setting" className="w-full aspect-[3/4] object-cover hover:scale-105 transition-transform duration-700" />
+                  <video autoPlay muted loop playsInline className="w-full aspect-[3/4] object-cover hover:scale-105 transition-transform duration-700">
+                    <source src={visionVideo.url} type="video/mp4" />
+                  </video>
                 </div>
                 <div className="text-center flex-1">
-                  <h2 className="font-serif text-6xl md:text-7xl font-light mb-5">Ceremony</h2>
-                  <p className="font-serif text-2xl md:text-3xl mb-5">4:00 PM</p>
-                  <div className="font-sans text-sm text-muted-foreground space-y-1.5 mb-5">
-                    <p>Grace Chapel</p>
-                    <p>123 Pinewood Lane</p>
-                    <p>Flagstaff, AZ 86001</p>
-                  </div>
-                  <a
-                    href="https://maps.google.com/?q=123+Pinewood+Lane+Flagstaff+AZ+86001"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="font-sans text-sm underline underline-offset-4 text-foreground hover:text-muted-foreground transition-colors"
-                  >
-                    Map
-                  </a>
+                  <h2 className="font-serif text-6xl md:text-7xl font-light mb-5 text-primary">Vision</h2>
+                  <p className="font-sans text-sm md:text-base text-muted-foreground leading-relaxed">
+                    Kali macht manipulative Dark-Pattern-Designs auf Webseiten sichtbar und rechtlich einordenbar, damit Verbraucherzentralen und Aufsichtsbehörden systematisch und gerichtsfest gegen sie vorgehen können.
+                  </p>
                 </div>
               </div>
             </ScrollReveal>
 
-            {/* Reception */}
+            {/* Vorgehensweise */}
             <ScrollReveal direction="right" delay={0.15}>
               <div className="flex flex-col md:flex-row items-center gap-10">
                 <div className="w-full md:w-1/2 overflow-hidden md:order-last">
-                  <img src={receptionImage} alt="Woman in flowing dress in natural outdoor setting" className="w-full aspect-[3/4] object-cover hover:scale-105 transition-transform duration-700" />
+                  <video autoPlay muted loop playsInline className="w-full aspect-[3/4] object-cover hover:scale-105 transition-transform duration-700">
+                    <source src={crawlerVideo.url} type="video/mp4" />
+                  </video>
                 </div>
                 <div className="text-center flex-1">
-                  <h2 className="font-serif text-6xl md:text-7xl font-light mb-5">Reception</h2>
-                  <p className="font-serif text-2xl md:text-3xl mb-5">4:30 - 10:00 PM</p>
-                  <div className="font-sans text-sm text-muted-foreground space-y-1.5 mb-5">
-                    <p>The Copper Barrel</p>
-                    <p>456 Mountain View Drive</p>
-                    <p>Flagstaff, AZ 86001</p>
-                  </div>
-                  <a
-                    href="https://maps.google.com/?q=456+Mountain+View+Drive+Flagstaff+AZ+86001"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="font-sans text-sm underline underline-offset-4 text-foreground hover:text-muted-foreground transition-colors"
-                  >
-                    Map
-                  </a>
+                  <h2 className="font-serif text-6xl md:text-7xl font-light mb-5 text-primary">Vorgehensweise</h2>
+                  <p className="font-sans text-sm md:text-base text-muted-foreground leading-relaxed">
+                    Ein automatisierter Crawler durchsucht Zielseiten headless, erkennt Dark Patterns über eine Kombination aus visuellen Heuristiken und KI-Textklassifikation, ordnet jeden Fund der einschlägigen Rechtsnorm und bietet einen Report.
+                  </p>
                 </div>
               </div>
             </ScrollReveal>
