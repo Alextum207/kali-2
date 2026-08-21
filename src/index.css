@@ -64,6 +64,39 @@
     --input: 0 0% 16%;
     --ring: 48 100% 50%;
   }
+
+  /* Light theme for the Kali landing page & dashboard */
+  .kali-light {
+    --background: 42 45% 92%;
+    --foreground: 60 4% 8%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 60 4% 8%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 60 4% 8%;
+
+    --primary: 64 72% 34%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 46 30% 87%;
+    --secondary-foreground: 60 4% 12%;
+
+    --muted: 46 22% 88%;
+    --muted-foreground: 45 6% 38%;
+
+    --accent: 64 72% 34%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 44 16% 82%;
+    --input: 44 16% 82%;
+    --ring: 64 72% 34%;
+
+    color-scheme: light;
+  }
 }
 
 @layer base {
