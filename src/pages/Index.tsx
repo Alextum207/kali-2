@@ -94,20 +94,52 @@ const Index = () => {
           </div>
         </section>
 
-        {/* CTA - Our Story */}
-        <ScrollReveal>
-          <section className="py-20 md:py-28 text-center px-6">
-            <h2 className="font-serif text-4xl md:text-5xl font-light mb-8">Genaue Beschreibung</h2>
-            <a
-              href="https://github.com/Alextum207/Kali/blob/master/README.md"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-foreground text-background px-10 py-3 text-sm font-sans tracking-widest uppercase hover:bg-foreground/80 hover:scale-105 transition-all duration-300"
-            >
-              Read Me
-            </a>
-          </section>
-        </ScrollReveal>
+        {/* CTA + Team */}
+        <section className="py-20 md:py-28 px-6 md:px-12">
+          <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-12 items-start">
+            {/* Genaue Beschreibung */}
+            <ScrollReveal direction="left">
+              <div className="text-center">
+                <h2 className="font-serif text-4xl md:text-5xl font-light mb-8">Genaue Beschreibung</h2>
+                <a
+                  href="https://github.com/Alextum207/Kali/blob/master/README.md"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block bg-foreground text-background px-10 py-3 text-sm font-sans tracking-widest uppercase hover:bg-foreground/80 hover:scale-105 transition-all duration-300"
+                >
+                  Read Me
+                </a>
+              </div>
+            </ScrollReveal>
+
+            {/* Das Team */}
+            <ScrollReveal direction="right" delay={0.15}>
+              <div>
+                <h2 className="font-serif text-4xl md:text-5xl font-light mb-8 text-center">Das Team</h2>
+                <div className="grid grid-cols-2 gap-8">
+                  {teamMembers.map((member) => (
+                    <div key={member.name} className="text-center">
+                      <a
+                        href={member.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label={`${member.name} auf LinkedIn`}
+                      >
+                        <img
+                          src={member.image}
+                          alt={member.name}
+                          className="w-28 h-28 md:w-36 md:h-36 rounded-full object-cover mx-auto mb-4 hover:scale-105 transition-transform duration-300"
+                        />
+                      </a>
+                      <p className="font-sans text-sm md:text-base font-medium">{member.name}</p>
+                      <p className="font-sans text-xs md:text-sm text-muted-foreground mt-1">{member.role}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </ScrollReveal>
+          </div>
+        </section>
 
         {/* Full-width Logo */}
         <ScrollReveal direction="none" duration={0.8}>
