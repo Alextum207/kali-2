@@ -63,6 +63,34 @@ const trust = [
   { icon: Users, label: "Independent & impartial" },
 ];
 
+const kaliFeatures = [
+  {
+    icon: LayoutDashboard,
+    title: "Dashboard with risk overview",
+    text: "All previous scans at a glance, with a risk badge per page.",
+  },
+  {
+    icon: FileSearch,
+    title: "Finding details per page",
+    text: "Which manipulative patterns were found where — with filtering options.",
+  },
+  {
+    icon: Scale,
+    title: "Legal classification",
+    text: "Every finding is automatically mapped to the relevant norm (UWG, BGB, DSGVO, DSA, PAngV).",
+  },
+  {
+    icon: FileText,
+    title: "Court-ready PDF report",
+    text: "Download an evidence report with cover sheet, risk score and finding table — including screenshot and timestamp as proof.",
+  },
+  {
+    icon: MessageSquare,
+    title: "Chatbot (planned)",
+    text: "Case workers can ask questions about a scan's findings via chat and get answers with sources and disclaimers — nothing is stored.",
+  },
+];
+
 const NavLinkItem = ({ link, onClick, className }: { link: (typeof navLinks)[number]; onClick?: () => void; className?: string }) => {
   if (link.internal) {
     return (
