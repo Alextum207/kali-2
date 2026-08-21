@@ -150,18 +150,59 @@ const Index = () => {
           </div>
         </section>
 
-        {/* Full-width Logo */}
+        {/* Features */}
         <ScrollReveal direction="none" duration={0.8}>
-          <section className="relative h-[60vh] md:h-[70vh] overflow-hidden bg-white flex items-center justify-center">
-            <motion.img
-              src={logoAsset.url}
-              alt="Kali — Dark Pattern Detector"
-              className="w-full h-full object-contain p-8 md:p-16"
-              whileInView={{ scale: 1 }}
-              initial={{ scale: 1.05 }}
-              viewport={{ once: true }}
-              transition={{ duration: 1.2, ease: "easeOut" }}
-            />
+          <section className="py-20 md:py-28 px-6 md:px-12 border-t border-border">
+            <div className="max-w-6xl mx-auto">
+              <h2 className="font-serif text-4xl md:text-5xl font-light mb-16 text-center">Features</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
+                <div className="text-center">
+                  <div className="inline-flex items-center justify-center w-14 h-14 mb-5 rounded-full bg-muted">
+                    <LayoutDashboard className="w-7 h-7 text-primary" />
+                  </div>
+                  <h3 className="font-sans text-lg font-semibold mb-2">Dashboard mit Risiko-Übersicht</h3>
+                  <p className="font-sans text-sm text-muted-foreground leading-relaxed">
+                    Alle bisherigen Scans auf einen Blick, mit Risiko-Badge pro Seite.
+                  </p>
+                </div>
+                <div className="text-center">
+                  <div className="inline-flex items-center justify-center w-14 h-14 mb-5 rounded-full bg-muted">
+                    <FileSearch className="w-7 h-7 text-primary" />
+                  </div>
+                  <h3 className="font-sans text-lg font-semibold mb-2">Fund-Details je Seite</h3>
+                  <p className="font-sans text-sm text-muted-foreground leading-relaxed">
+                    Welche manipulativen Muster wo gefunden wurden, mit Filtermöglichkeit.
+                  </p>
+                </div>
+                <div className="text-center">
+                  <div className="inline-flex items-center justify-center w-14 h-14 mb-5 rounded-full bg-muted">
+                    <Scale className="w-7 h-7 text-primary" />
+                  </div>
+                  <h3 className="font-sans text-lg font-semibold mb-2">Rechtliche Einordnung</h3>
+                  <p className="font-sans text-sm text-muted-foreground leading-relaxed">
+                    Jeder Fund wird automatisch der passenden Norm zugeordnet (UWG, BGB, DSGVO, DSA, PAngV).
+                  </p>
+                </div>
+                <div className="text-center lg:col-start-1 lg:col-end-2 lg:justify-self-end">
+                  <div className="inline-flex items-center justify-center w-14 h-14 mb-5 rounded-full bg-muted">
+                    <FileText className="w-7 h-7 text-primary" />
+                  </div>
+                  <h3 className="font-sans text-lg font-semibold mb-2">Gerichtsfester PDF-Report</h3>
+                  <p className="font-sans text-sm text-muted-foreground leading-relaxed">
+                    Download eines Beweis-Reports mit Deckblatt, Risiko-Score und Fund-Tabelle, samt Screenshot/Zeitstempel als Beleg.
+                  </p>
+                </div>
+                <div className="text-center lg:col-start-2 lg:col-end-3 lg:justify-self-start">
+                  <div className="inline-flex items-center justify-center w-14 h-14 mb-5 rounded-full bg-muted">
+                    <MessageSquare className="w-7 h-7 text-primary" />
+                  </div>
+                  <h3 className="font-sans text-lg font-semibold mb-2">Chatbot <span className="text-muted-foreground font-normal">(geplant)</span></h3>
+                  <p className="font-sans text-sm text-muted-foreground leading-relaxed">
+                    Case-Worker können in der Scan-Ansicht per Chat Fragen zu den Funden eines Scans stellen und bekommen Antworten mit Quellenangabe/Disclaimer, ohne dass irgendwas gespeichert wird.
+                  </p>
+                </div>
+              </div>
+            </div>
           </section>
         </ScrollReveal>
 
