@@ -19,13 +19,16 @@ import {
 import { motion, AnimatePresence } from "framer-motion";
 import heroBg from "@/assets/kali-hero.jpg";
 import logo from "@/assets/kali-firefly-logo.png";
+import visionVideo from "@/assets/vision-scan.mp4.asset.json";
+import vorgehenVideo from "@/assets/vorgehensweise-crawler.mp4.asset.json";
+import { LayoutDashboard, FileSearch, FileText, MessageSquare } from "lucide-react";
 
 const navLinks = [
   { label: "Platform", href: "#platform" },
-  { label: "For Authorities", href: "#audiences" },
+  { label: "How Kali works", href: "/guide", internal: true },
   { label: "Technology", href: "https://github.com/Alextum207/Kali", external: true },
   { label: "Resources", href: "https://github.com/Alextum207/Kali/blob/master/README.md", external: true },
-  { label: "About", href: "/team", internal: true },
+  { label: "About us", href: "/about", internal: true },
 ];
 
 const features = [
@@ -58,6 +61,34 @@ const trust = [
   { icon: Globe, label: "EU & national law aligned" },
   { icon: BadgeCheck, label: "Evidence you can rely on" },
   { icon: Users, label: "Independent & impartial" },
+];
+
+const kaliFeatures = [
+  {
+    icon: LayoutDashboard,
+    title: "Dashboard with risk overview",
+    text: "All previous scans at a glance, with a risk badge per page.",
+  },
+  {
+    icon: FileSearch,
+    title: "Finding details per page",
+    text: "Which manipulative patterns were found where — with filtering options.",
+  },
+  {
+    icon: Scale,
+    title: "Legal classification",
+    text: "Every finding is automatically mapped to the relevant norm (UWG, BGB, DSGVO, DSA, PAngV).",
+  },
+  {
+    icon: FileText,
+    title: "Court-ready PDF report",
+    text: "Download an evidence report with cover sheet, risk score and finding table — including screenshot and timestamp as proof.",
+  },
+  {
+    icon: MessageSquare,
+    title: "Chatbot (planned)",
+    text: "Case workers can ask questions about a scan's findings via chat and get answers with sources and disclaimers — nothing is stored.",
+  },
 ];
 
 const NavLinkItem = ({ link, onClick, className }: { link: (typeof navLinks)[number]; onClick?: () => void; className?: string }) => {
@@ -258,6 +289,78 @@ const Landing = () => {
         </div>
       </section>
 
+      {/* Vision & Vorgehen */}
+      <section className="px-6 md:px-12 pb-16 md:pb-24">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className="bg-card rounded-3xl border border-border shadow-sm overflow-hidden">
+            <video
+              src={visionVideo.url}
+              autoPlay
+              muted
+              loop
+              playsInline
+              className="w-full aspect-video object-cover"
+            />
+            <div className="px-6 md:px-10 py-8 md:py-10">
+              <h2 className="font-serif italic text-3xl md:text-4xl font-medium text-primary mb-4">Vision</h2>
+              <p className="text-sm md:text-base text-foreground/65 leading-relaxed">
+                Kali macht manipulative Dark-Pattern-Designs auf Webseiten sichtbar und rechtlich einordenbar, damit
+                Verbraucherzentralen und Aufsichtsbehörden systematisch und gerichtsfest gegen sie vorgehen können.
+              </p>
+            </div>
+          </div>
+          <div className="bg-card rounded-3xl border border-border shadow-sm overflow-hidden">
+            <video
+              src={vorgehenVideo.url}
+              autoPlay
+              muted
+              loop
+              playsInline
+              className="w-full aspect-video object-cover"
+            />
+            <div className="px-6 md:px-10 py-8 md:py-10">
+              <h2 className="font-serif italic text-3xl md:text-4xl font-medium text-primary mb-4">Vorgehen</h2>
+              <p className="text-sm md:text-base text-foreground/65 leading-relaxed">
+                Ein automatisierter Crawler durchsucht Zielseiten headless, erkennt Dark Patterns über eine Kombination
+                aus visuellen Heuristiken und KI-Textklassifikation, ordnet jeden Fund der einschlägigen Rechtsnorm und
+                bietet einen Report.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Features */}
+      <section className="px-6 md:px-12 pb-16 md:pb-24">
+        <div className="max-w-7xl mx-auto bg-card rounded-3xl border border-border shadow-sm px-6 md:px-12 py-10 md:py-14">
+          <p className="text-xs font-semibold tracking-[0.25em] uppercase text-foreground/60 text-center mb-10 md:mb-14">
+            Features
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-8">
+            {kaliFeatures.slice(0, 3).map((f) => (
+              <div key={f.title} className="text-center">
+                <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-secondary mb-5">
+                  <f.icon className="w-7 h-7 text-primary" strokeWidth={1.5} />
+                </div>
+                <h3 className="text-lg font-semibold mb-2">{f.title}</h3>
+                <p className="text-sm text-foreground/65 leading-relaxed">{f.text}</p>
+              </div>
+            ))}
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-8 mt-10 md:mt-12 max-w-3xl mx-auto">
+            {kaliFeatures.slice(3).map((f) => (
+              <div key={f.title} className="text-center">
+                <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-secondary mb-5">
+                  <f.icon className="w-7 h-7 text-primary" strokeWidth={1.5} />
+                </div>
+                <h3 className="text-lg font-semibold mb-2">{f.title}</h3>
+                <p className="text-sm text-foreground/65 leading-relaxed">{f.text}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer className="border-t border-border px-6 md:px-12 py-10">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
@@ -266,9 +369,9 @@ const Landing = () => {
             <span className="text-sm font-bold tracking-[0.2em]">KALI</span>
           </div>
           <nav className="flex flex-wrap items-center justify-center gap-x-8 gap-y-2">
-            <Link to="/team" className="text-sm text-foreground/60 hover:text-foreground transition-colors">Team</Link>
+            <Link to="/about" className="text-sm text-foreground/60 hover:text-foreground transition-colors">About us</Link>
             <Link to="/pitch-deck" className="text-sm text-foreground/60 hover:text-foreground transition-colors">Pitch Deck</Link>
-            <Link to="/guide" className="text-sm text-foreground/60 hover:text-foreground transition-colors">Guide</Link>
+            <Link to="/guide" className="text-sm text-foreground/60 hover:text-foreground transition-colors">How Kali works</Link>
             <a
               href="https://github.com/Alextum207/Kali"
               target="_blank"
