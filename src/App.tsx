@@ -7,6 +7,7 @@ import { AnimatePresence } from "framer-motion";
 import Landing from "./pages/Landing";
 import Dashboard from "./pages/Dashboard";
 import About from "./pages/About";
+import CaseAnalysis from "./pages/CaseAnalysis";
 import PitchDeck from "./pages/PitchDeck";
 import Guide from "./pages/Guide";
 import NotFound from "./pages/NotFound";
