@@ -198,7 +198,9 @@ const CaseDetail = ({ item, onBack }: { item: CaseItem; onBack: () => void }) =>
       <div className="flex items-start justify-between gap-4">
         <div>
           <h2 className="text-xl md:text-2xl font-bold tracking-tight flex items-center gap-2">
-            {item.company} – {item.pattern}
+            <Link to="/case-analysis" className="hover:underline">
+              {item.company} – {item.pattern}
+            </Link>
             <ExternalLink className="w-4 h-4 text-muted-foreground" />
           </h2>
           <p className="text-sm text-muted-foreground mt-1">{item.site} / checkout</p>
@@ -213,6 +215,15 @@ const CaseDetail = ({ item, onBack }: { item: CaseItem; onBack: () => void }) =>
             {item.score.toFixed(1)} <span className="text-sm font-normal text-muted-foreground">/10</span>
           </p>
         </div>
+      </div>
+
+      <div className="mt-3">
+        <Link
+          to="/case-analysis"
+          className="inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:underline"
+        >
+          Open full case analysis <ArrowRight className="w-4 h-4" />
+        </Link>
       </div>
 
       {/* Tabs */}
