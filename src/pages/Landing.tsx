@@ -369,9 +369,9 @@ const Landing = () => {
             <span className="text-sm font-bold tracking-[0.2em]">KALI</span>
           </div>
           <nav className="flex flex-wrap items-center justify-center gap-x-8 gap-y-2">
-            <Link to="/team" className="text-sm text-foreground/60 hover:text-foreground transition-colors">Team</Link>
+            <Link to="/about" className="text-sm text-foreground/60 hover:text-foreground transition-colors">About us</Link>
             <Link to="/pitch-deck" className="text-sm text-foreground/60 hover:text-foreground transition-colors">Pitch Deck</Link>
-            <Link to="/guide" className="text-sm text-foreground/60 hover:text-foreground transition-colors">Guide</Link>
+            <Link to="/guide" className="text-sm text-foreground/60 hover:text-foreground transition-colors">How Kali works</Link>
             <a
               href="https://github.com/Alextum207/Kali"
               target="_blank"
