@@ -19,13 +19,16 @@ import {
 import { motion, AnimatePresence } from "framer-motion";
 import heroBg from "@/assets/kali-hero.jpg";
 import logo from "@/assets/kali-firefly-logo.png";
+import visionVideo from "@/assets/vision-scan.mp4.asset.json";
+import vorgehenVideo from "@/assets/vorgehensweise-crawler.mp4.asset.json";
+import { LayoutDashboard, FileSearch, FileText, MessageSquare } from "lucide-react";
 
 const navLinks = [
   { label: "Platform", href: "#platform" },
-  { label: "For Authorities", href: "#audiences" },
+  { label: "How Kali works", href: "/guide", internal: true },
   { label: "Technology", href: "https://github.com/Alextum207/Kali", external: true },
   { label: "Resources", href: "https://github.com/Alextum207/Kali/blob/master/README.md", external: true },
-  { label: "About", href: "/team", internal: true },
+  { label: "About us", href: "/about", internal: true },
 ];
 
 const features = [
