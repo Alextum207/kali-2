@@ -6,10 +6,10 @@ import ScrollReveal from "@/components/ScrollReveal";
 import heroVideo from "@/assets/hero-video.mp4";
 import visionVideo from "@/assets/vision-scan.mp4.asset.json";
 import crawlerVideo from "@/assets/vorgehensweise-crawler.mp4.asset.json";
-import logoAsset from "@/assets/logo.jpg.asset.json";
 import teamKarinia from "@/assets/team-karinia.jpeg.asset.json";
 import teamIra from "@/assets/team-ira.jpeg.asset.json";
 import teamAlexander from "@/assets/team-alexander.jpeg.asset.json";
+import { LayoutDashboard, FileSearch, Scale, FileText, MessageSquare } from "lucide-react";
 
 const teamMembers = [
   {
