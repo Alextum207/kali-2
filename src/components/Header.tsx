@@ -47,7 +47,7 @@ const Header = ({ transparent = false }: HeaderProps) => {
             rel="noopener noreferrer"
             className="px-6 py-2 text-sm tracking-widest uppercase font-sans bg-foreground text-background hover:bg-foreground/80 hover:scale-105 transition-all duration-200"
           >
-            GitHub
+            Try it out
           </a>
         </div>
 
