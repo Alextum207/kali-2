@@ -6,12 +6,7 @@ import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 import Landing from "./pages/Landing";
 import Dashboard from "./pages/Dashboard";
-import OurStory from "./pages/OurStory";
-import Travel from "./pages/Travel";
-import Registry from "./pages/Registry";
-import Cart from "./pages/Cart";
-import RSVP from "./pages/RSVP";
-import Team from "./pages/Team";
+import About from "./pages/About";
 import PitchDeck from "./pages/PitchDeck";
 import Guide from "./pages/Guide";
 import NotFound from "./pages/NotFound";
@@ -25,12 +20,7 @@ const AnimatedRoutes = () => {
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<Landing />} />
         <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/story" element={<OurStory />} />
-        <Route path="/travel" element={<Travel />} />
-        <Route path="/registry" element={<Registry />} />
-        <Route path="/cart" element={<Cart />} />
-        <Route path="/rsvp" element={<RSVP />} />
-        <Route path="/team" element={<Team />} />
+        <Route path="/about" element={<About />} />
         <Route path="/pitch-deck" element={<PitchDeck />} />
         <Route path="/guide" element={<Guide />} />
         <Route path="*" element={<NotFound />} />
