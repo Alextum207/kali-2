@@ -7,6 +7,30 @@ import heroVideo from "@/assets/hero-video.mp4";
 import visionVideo from "@/assets/vision-scan.mp4.asset.json";
 import crawlerVideo from "@/assets/vorgehensweise-crawler.mp4.asset.json";
 import logoAsset from "@/assets/logo.jpg.asset.json";
+import teamKarinia from "@/assets/team-karinia.jpeg.asset.json";
+import teamIra from "@/assets/team-ira.jpeg.asset.json";
+import teamAlexander from "@/assets/team-alexander.jpeg.asset.json";
+
+const teamMembers = [
+  {
+    name: "Karinia Häberle Marbaniang",
+    role: "Legal Studies | Ludwig Maximilian Universität München",
+    image: teamKarinia.url,
+    link: "https://www.linkedin.com/in/karinia-häberle-marbaniang-10b079365?utm_source=share_via&utm_content=profile&utm_medium=member_ios",
+  },
+  {
+    name: "Ira Haltia",
+    role: "Master of Laws | University of Helsinki",
+    image: teamIra.url,
+    link: "https://www.linkedin.com/in/irahaltia?utm_source=share_via&utm_content=profile&utm_medium=member_ios",
+  },
+  {
+    name: "Alexander Saadé",
+    role: "Information Systems | Technical University of Munich",
+    image: teamAlexander.url,
+    link: "https://www.linkedin.com/in/alexander-saade-0971853b3?utm_source=share_via&utm_content=profile&utm_medium=member_ios",
+  },
+];
 
 const Index = () => {
   return (
