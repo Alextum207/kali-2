@@ -15,7 +15,7 @@ const members = [
   },
   {
     name: "Ira Haltia",
-    role: "Law",
+    role: "Master of Laws | University of Helsinki",
     image: teamIra.url,
     link: "https://www.linkedin.com/in/irahaltia?utm_source=share_via&utm_content=profile&utm_medium=member_ios",
   },
