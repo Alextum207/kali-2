@@ -9,13 +9,13 @@ import teamAlexander from "@/assets/team-alexander.jpeg.asset.json";
 const members = [
   {
     name: "Karinia Häberle Marbaniang",
-    role: "Legal Studies | Ludwig Maximilian Universität München",
+    role: "Law | Ludwig Maximilian Universität München",
     image: teamKarinia.url,
     link: "https://www.linkedin.com/in/karinia-h%C3%A4berle-marbaniang-10b079365?utm_source=share_via&utm_content=profile&utm_medium=member_ios",
   },
   {
     name: "Ira Haltia",
-    role: "Master of Laws | University of Helsinki",
+    role: "Law | Ludwig Maximilian Universität München & University of Helsinki",
     image: teamIra.url,
     link: "https://www.linkedin.com/in/irahaltia?utm_source=share_via&utm_content=profile&utm_medium=member_ios",
   },
